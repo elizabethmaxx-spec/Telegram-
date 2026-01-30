@@ -10,7 +10,7 @@ bot = telebot.TeleBot(TOKEN)
 def start(m):
     kb = telebot.types.InlineKeyboardMarkup()
     # Замени на свою реальную ссылку на канал!
-    btn = telebot.types.InlineKeyboardButton("Подписаться 📢", url="https://t.me/ТВОЙ_КАНАЛ")
+    btn = telebot.types.InlineKeyboardButton("Подписаться 📢", url="https://t.me/cicitimoxi")
     chk = telebot.types.InlineKeyboardButton("Проверить ✅", callback_data="c")
     kb.add(btn); kb.add(chk)
     bot.send_message(m.chat.id, "Привет! Подпишись на канал, чтобы увидеть итоги года в МЭШ!", reply_markup=kb)
